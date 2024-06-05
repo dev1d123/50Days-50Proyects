@@ -10,25 +10,29 @@ body{
     padding: 50px;
 }
 
+.circle-container{
+    position: fixed; /*this*/
+    top: -100px;
+    left: -100px;
+}
 .circle{
-    position: absolute;
+    position: relative;
+    width: 200px;
+    height: 200px;
     background-color: orange;
-    padding: 100px;
-    padding-top: 120px;
     border-radius: 100%;
-    bottom: 80vh;
-    right: 92vw;
 }
 .circle #close{
 }
 
 .circle #close{
-    position: relative;
-    top: 60px;
-    left: 60px;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    
 }
 .circle #options{
-    position: relative;
-    left: 30px;
-    bottom: 60px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
 }
