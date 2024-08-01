@@ -1,0 +1,42 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: beige;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	gap: 20px;
+}
+.faq{
+	width: 500px;
+	text-align: left;
+	display: flex;
+	position: relative;
+	border: 2px gray solid;
+	border-radius: 10px;
+}
+.faq button{
+	padding: 20px;
+}
+.faq p{
+	padding: 20px;
+}
+button{
+	position: absolute;
+	right:0;
+	bottom: 50%;
+	transform: translateY(50%);	
+	color: red;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.faq.active::before,
+.faq.active::after{
+	content: 'asd';
+	background-color: red;
+}
+
+
