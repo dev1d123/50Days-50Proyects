@@ -14,17 +14,23 @@ body{
 	width: 500px;
 	text-align: left;
 	display: flex;
+	flex-direction: column;
 	position: relative;
 	border: 2px gray solid;
 	border-radius: 10px;
+	transition: 0.3s ease;
 }
 .faq button{
-	padding: 20px;
+	padding: 5px;
 }
-.faq p{
-	padding: 20px;
+.faq h3,p {
+	padding: 25px;
+	margin: 0;
 }
+
 button{
+	background-color: transparent;
+	border: 0;
 	position: absolute;
 	right:0;
 	bottom: 50%;
@@ -35,8 +41,48 @@ button{
 }
 .faq.active::before,
 .faq.active::after{
-	content: 'asd';
-	background-color: red;
+	content: '\f075';
+	font-family: 'Font Awesome 5 Free';
+	color: #2ecc71;
+	font-size: 5.2rem;
+	position: absolute;
+	opacity: 0.2;
+	top: 15px;
+	left: 40px;
+	z-index: 0;
+}
+
+.faq.active::before {
+	color: #3498db;
+	top: -5px;
+	left: 5px;
+	transform: rotateY(180deg);
+  }
+.faq.active{
+	background-color: white;
+	box-shadow: 10px 10px 10px 2px black;
+}
+
+.faq.active .faq-text{
+	display: block;
 }
 
 
+.faq-text{
+	display: none;
+}
+
+
+
+.faq-toggle .fa-times{
+	display: none;
+}
+
+.faq.active .faq-toggle .fa-times{
+	color: black;
+	display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down{
+	display: none;
+}
