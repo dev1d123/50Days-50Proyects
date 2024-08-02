@@ -34,8 +34,10 @@ p, h3{
 }
 .box{
     background-color: orange;
-    padding: 0px 15px 0px 15px;
+    padding: 5px 15px 5px 15px;
+    font-size:  20px;
     border-radius: 50px;
+    color: wheat;
 }
 
 .box.active{
