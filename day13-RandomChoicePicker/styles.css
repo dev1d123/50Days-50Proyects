@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color:rgb(107, 107, 245);
+
+}
+.container{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+p, h3{
+    color: beige;
+}
+
+.container textarea{
+    padding: 10px;
+}
+
+.words{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row;
+    width: 550px;
+
+}
+.box{
+    background-color: orange;
+    padding: 0px 15px 0px 15px;
+    border-radius: 50px;
+}
+
+.box.active{
+    background-color: rgb(27, 0, 137);
+
+}
